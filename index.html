@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:rgba(255, 255, 255, 0.192);
+            background-image: url(loginbc3.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+            width: 400px;
+            align-items: center;
+            border:1px solid black;
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .box{
+            width: 60%;
+            margin: 20px;
+            padding: 20px 30px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            outline: none;
+        }
+        .submit{
+            color: white;
+            width: 50%;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            outline: none;
+            border: none;
+            margin-top:40px ;      
+        }
+        .submit:hover{
+            background-color: rgba(255, 255, 255, 0.395);
+            color: black;
+        }
+        h1{
+            color: white;
+        }
+        ::placeholder{
+            color: white;
+        }
+        .footer{
+            margin-top: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form action="login.html" class="form">
+        <h1>Sign up</h1>
+        <input type="text" class="box" placeholder="Enter Your Name" required>
+        <input type="email" class="box" placeholder="Enter your Email" required>
+        <input type="password" class="box" placeholder="Password" required>
+        <input type="password" class="box" placeholder="Renter Password" required>
+        <div><input type="checkbox" required>Accept all the terms and condition</div>
+        <input type="submit" class="submit">
+        <div class="footer">Already have an account <a href="login.html">Log In</a></div>
+    </form>
+</body>
+</html>

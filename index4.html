@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        .logo h2{
+    color: aliceblue;
+    text-shadow: 5px 5px 5px black;
+    border: solid wheat;
+    padding:0px 3px 0px 3px;
+}
+body{
+            background-color:rgba(255, 255, 255, 0.192);
+            background-image: url(doctorbc.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+       
+        .main{
+            display: grid;
+            grid-template-columns:repeat(4, 300px);
+            grid-template-rows:repeat(4, 350px);
+            grid-template-areas: 'img1 img2 img3'
+            'img4 img5 img6' ;
+            gap: 10px;
+            border: solid black;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            
+        }
+        .header{
+            border: solid black;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .img1{grid-area: img1;}
+        .img2{grid-area: img2;}
+        .img3{grid-area: img3;}
+        .img4{grid-area: img4;}
+        .img5{grid-area: img5;}
+        .img6{grid-area: img6;}
+        .head1{grid-area: head1;}
+        .img{
+            width: 100%;
+            height: 75%;
+            border-radius: 10px;
+            background-color: aliceblue;
+        }
+        .head{
+            padding: 30%;}
+        /* nav-bar */
+
+.nav{
+    display: flex;
+    background-color:rgba(0, 0, 0, 0.332);
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;margin-bottom: 10px;
+}
+.lin{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+.lin:hover{
+    background-color: rgba(0, 0, 0, 0.605);
+    border-radius: 10px;
+}
+.logo{
+    margin-left: 10px;
+}
+
+/* footer */
+
+.col1{
+    line-height: 30px;
+}
+.col2 img{
+    width: 200px;
+    height: 200px;
+}
+.footer{
+    margin-top: 20%;
+    display: flex;
+    background-color: rgba(235, 232, 232, 0.5);
+    align-content: center;
+    gap: 20px;
+    justify-content:space-around;
+    padding: 20px;
+    border-radius: 10px;
+} 
+li a{
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+li{
+    list-style: none;
+}
+h4{
+    color: black;
+    text-align: center;
+    font-size:larger;
+}
+.box{
+    width: 50px;
+    height: 30px;
+}
+a i{
+    width: 25px;
+    height: 30px;
+    color: black;
+}
+a:hover{
+background-color: antiquewhite;
+width: 40px;
+}
+.hov:hover{
+    background-color: rgba(185, 192, 192, 0.934);
+    width:300px;
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><h2>K M C H</h2></div>
+        <div class="menu">
+            <a href="index3.html" class="lin">Home</a>
+            <a href="index1.html" class="lin">Appointment</a>
+            <a href="service.html" class="lin">Services</a>
+            <a href="" class="lin">About</a>
+        </div>
+    </div>
+    <div  class="header"><h1 style="text-align: center;">Specilist Doctor's List</h1>
+    <h2 style="text-align: center" > Choose your Doctor Here</h2></div>
+    <div class="main">
+    <div class=""><h2 class="head1 head">Cardiologist Specalist:</h2></div> 
+    <div class="hov"><img src="card1.png" alt="" class="img1 img"><p>Dr.Krishnan <br>Age:78 <br>Experience:20Years</p></div>
+    <div class="hov"><img src="card2.jpg" alt="" class="img2 img"><p>Dr.Muralidharan <br>Age:70 <br>Experience:13Years</p></div>
+    <div class="hov"><img src="card3.jpeg" alt="" class="img3 img"><p>Dr.Prenathi <br>Age:53 <br>Experience:8Years</p></div>
+    <div class=""><h2 class="head2 head">Hematologist <br> Specalist:</h2></div>
+    <div class="hov"><img src="hema1.jpeg" alt="" class="img4 img"><p>Dr.Smithi <br>Age:52 <br>Experience:7Years</p></div>
+    <div class="hov"><img src="hema2.webp" alt="" class="img5 img"><p>Dr.Logesh <br>Age:69 <br>Experience:12Years</p></div>
+    <div class="hov"><img src="hema3.jpg" alt="" class="img6 img"><p>Dr.Mahesh <br>Age:72 <br>Experience:17Years</p></div>
+    <div class=""><h2 class="head2 head">Pediartrician <br> Specalist:</h2></div>
+    <div class="hov"><img src="pedi2.jpg" alt="" class="img7 img"><p>Dr.Srikanth <br>Age:74 <br>Experience:16Years</p></div>
+    <div class="hov"><img src="pedi1.jpg" alt="" class="img8 img"><p>Dr.Tharun <br>Age:41 <br>Experience:6Years</p></div>
+    <div class="hov"><img src="pedi3.jpg" alt="" class="img9 img"><p>Dr.Lavanya <br>Age:39 <br>Experience:5Years</p></div>
+    <div class=""><h2 class="head2 head">Dental <br> Specalist:</h2></div>
+    <div class="hov"><img src="den3.jpg" alt="" class="img10 img"><p>Dr.Ramkumar <br>Age:74 <br>Experience:16Years</p></div>
+    <div class="hov"><img src="den1.png" alt="" class="img11 img"><p>Dr.Aruna <br>Age:36 <br>Experience:6Years</p></div>
+    <div class="hov"><img src="den2.jpg" alt="" class="img12 img"><p>Dr.Darsha <br>Age:32 <br>Experience:3Years</p></div>
+</div>
+ <!-- footer -->
+     
+ <footer class="footer">
+    <div class="col col2 ">
+        <img src="logo3.png" alt="">
+       
+    </div>
+    <div class="col col1">
+        <h4>Address:</h4>
+        <ul><p>Kovai Medical Center and Hospital, <br> Coimbatore.99, <br> Avanashi Road, <br> Coimbatore-641014.</p></ul>
+       
+    </div>
+    <div class="col ">
+        <h4>Company:</h4>
+        <ul>
+            <li class="box"><a href="index1.html">Appointment</a></li>
+            <li class="box"><a href="cancel.html">Cancel_Appointment</a></li>
+            <li class="box"><a href="service.html">Service</a></li>
+            <li class="box"><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    <div class="col">
+        <h4>Get help:</h4>
+        <ul>
+            <li class="box"><a href="">FAQ</a> </li>
+            <li class="box"><a href="">Contact</a></li>
+            <li class="box"><a href=""></a></li>
+            <li class="box"><a href=""></a></li>
+        </ul>
+    </div>
+    <div class="col">
+        <h4>Follow us:</h4>
+        <div class="socialicon">
+            <a href="" class="box"><i class="fab fa-facebook-f"></i></a>
+            <a href="" class="box"><i class="fab fa-twitter"></i></a>
+            <a href="" class="box"><i class="fab fa-instagram"></i></a>
+            <a href="" class="box"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    
+ </footer>
+ <!-- footer end -->
+</div>
+</body>
+</html>

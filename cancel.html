@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+    <style>     
+     body{
+        text-align: center;
+        color: black;
+        background-image: url(appbc.jpeg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+        
+    }
+    table{
+         width: 500px;
+         height: 550px; 
+         border: solid black; 
+         color: black;
+         background-color:rgba(255, 255, 255, 0.249);
+         border-radius: 10px;}
+    .tab1,td,th{
+       margin-left: 550px;
+        text-align: start;
+        padding-left: 10px;
+        border-radius: 10px; }
+        .tex{
+            background-color: rgba(255, 255, 255, 0.597);
+            border-radius: 10px;
+            color: rgba(0, 0, 0, 0.841);
+            width: 80%;
+            padding: 10px;
+            border:solid rgba(0, 0, 0, 0.562);
+            outline: none;}
+        .sub{
+            padding: 20px 40px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            background-color: rgba(0, 0, 0, 0.903);
+            color: white;
+            margin-left:150px;
+        }
+        .sub:hover{
+            background-color: rgba(240, 248, 255, 0.321);
+            color: black;
+        }
+                /* nav-bar */
+                .logo h2{
+    color: aliceblue;
+    text-shadow: 5px 5px 5px black;
+    border: solid wheat;
+    padding:0px 3px 0px 3px;
+}
+
+.nav{
+    display: flex;
+    background-color:rgba(0, 0, 0, 0.332);
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;margin-bottom: 10px;
+}
+.lin{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+.lin:hover{
+    background-color: rgba(0, 0, 0, 0.605);
+    border-radius: 10px;
+}
+.logo{
+    margin-left: 10px;
+}
+
+/* footer */
+
+.col1{
+    line-height: 30px;
+}
+.col2 img{
+    width: 200px;
+    height: 200px;
+}
+.footer{
+    margin-top: 20%;
+    display: flex;
+    background-color: rgba(235, 232, 232, 0.5);
+    align-content: center;
+    gap: 20px;
+    justify-content:space-around;
+    padding: 20px;
+    border-radius: 10px;
+} 
+li a{
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+li{
+    list-style: none;
+}
+h4{
+    color: black;
+    text-align: center;
+    font-size:larger;
+}
+.box{
+    width: 50px;
+    height: 30px;
+}
+a i{
+    width: 25px;
+    height: 30px;
+    color: black;
+}
+a:hover{
+background-color: antiquewhite;
+width: 40px;
+}
+/* footer end */
+    </style>
+</head>
+<body>
+        <!-- nav -->
+        <div class="nav">
+            <div class="logo"><h2>K M C H</h2></div>
+            <div class="menu">
+                <a href="index3.html" class="lin">Home</a>
+                <a href="index1.html" class="lin">Appointment</a>
+                <a href="service.html" class="lin">Services</a>
+                <a href="about.html" class="lin">About</a>
+            </div>
+        </div>
+        <!-- nav end -->
+    <form action="submit1.html">
+    <table class="tab1">
+        <tr>
+            <th><label for="Number">Appointment No:</label></th>
+            <td><input class="tex" type="number" placeholder="Enter Appointment No"></td>
+        </tr>
+        <tr>
+            <th><label for="name">Name of the doctor:</label></th>
+            <td><input class="tex"  type="text" name="name" id="name" placeholder="Dr Name"></td>
+        </tr>
+        <tr>
+            <th><label for="name">Name of the Patient:</label></th>
+            <td><input class="tex"  type="text" name="name" id="name" placeholder="Enter your Name"></td>
+        </tr>
+        <tr>
+            <th><label for="name">Email:</label></th>
+            <td><input class="tex"  type="email" name="name" id="name" placeholder="Enter Your Email"></td>
+        </tr>
+        <tr>
+            <th><label for="phone">Phone:</label></th>
+            <td><input class="tex" type="tel" name="phone" id="phone" placeholder="Enter Your Mobile No"></td>
+        </tr>
+        <tr>
+            <th><label for="date">Date:</label></th>
+            <td><input class="tex" type="date" name="date" id="date"></td>
+        </tr>
+        <tr>
+            <th><label for="time">Time:</label></th>
+            <td><input class="tex"  type="time" name="time" id="time"></td>
+        </tr>
+            <th><label for="reason">Reason:</label></th>
+            <td><textarea class="tex" name="reason" id="reason" placeholder="Enter the reson for cancel appointment"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" class="sub" value="Submit"></td>
+        </tr>
+    </table>
+    </form>
+    <!-- footer -->
+     
+    <footer class="footer">
+        <div class="col col2 ">
+            <img src="logo3.png" alt="">
+           
+        </div>
+        <div class="col col1">
+            <h4>Address:</h4>
+            <ul><p>Kovai Medical Center and Hospital, <br> Coimbatore.99, <br> Avanashi Road, <br> Coimbatore-641014.</p></ul>
+           
+        </div>
+        <div class="col ">
+            <h4>Company:</h4>
+            <ul>
+                <li class="box"><a href="index1.html">Appointment</a></li>
+                <li class="box"><a href="cancel.html">Cancel_Appointment</a></li>
+                <li class="box"><a href="service.html">Service</a></li>
+                <li class="box"><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h4>Get help:</h4>
+            <ul>
+                <li class="box"><a href="">FAQ</a> </li>
+                <li class="box"><a href="">Contact</a></li>
+                <li class="box"><a href=""></a></li>
+                <li class="box"><a href=""></a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h4>Follow us:</h4>
+            <div class="socialicon">
+                <a href="" class="box"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="box"><i class="fab fa-twitter"></i></a>
+                <a href="" class="box"><i class="fab fa-instagram"></i></a>
+                <a href="" class="box"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        
+     </footer>
+     <!-- footer end -->
+    </div>
+</body>
+</html>

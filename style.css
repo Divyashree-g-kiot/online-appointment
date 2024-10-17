@@ -1,0 +1,184 @@
+body{
+    background-image: url(homebc.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.logo h2{
+    color: aliceblue;
+    text-shadow: 5px 5px 5px black;
+    border: solid wheat;
+    padding:0px 3px 0px 3px;
+}
+/* nav-bar */
+
+.nav{
+    display: flex;
+    background-color:rgba(0, 0, 0, 0.332);
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;margin-bottom: 10px;
+}
+.lin{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+.lin:hover{
+    background-color: rgba(0, 0, 0, 0.605);
+    border-radius: 10px;
+}
+.logo{
+    margin-left: 10px;
+}
+
+/* footer */
+
+.col1{
+    line-height: 30px;
+}
+.col2 img{
+    width: 200px;
+    height: 200px;
+}
+.footer{
+    margin-top: 20%;
+    display: flex;
+    background-color: rgba(235, 232, 232, 0.5);
+    align-content: center;
+    gap: 20px;
+    justify-content:space-around;
+    padding: 20px;
+    border-radius: 10px;
+} 
+li a{
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+li{
+    list-style: none;
+}
+h4{
+    color: black;
+    text-align: center;
+    font-size:larger;
+}
+.box{
+    width: 50px;
+    height: 30px;
+}
+a i{
+    width: 25px;
+    height: 30px;
+    color: black;
+}
+a:hover{
+background-color: antiquewhite;
+width: 40px;
+}
+
+/* main */
+.main{
+    align-content: center;   
+}  
+.but button{ 
+    padding: 20px;
+    border-radius: 10px;
+    padding-right: opx;
+    margin-right: 0px;
+}
+button:hover{
+   background-color: rgba(0, 0, 0, 0.559);
+   color: white;
+} 
+.para1{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 300px;
+    margin-top: 50px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(235, 232, 232, 0.5);
+    border: solid white;
+}
+
+.para2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 900px;
+    padding: 20px;
+    width: 400px;
+    background-color: rgba(235, 232, 232, 0.5);
+    border-radius: 10px;
+    border: solid white;
+}
+.para3{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 300px;
+    margin-top: 50px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(235, 232, 232, 0.5);
+    border: solid white;
+}
+/* animation */
+.para1{
+    animation-name: example;
+    animation-duration: 2s;
+    position: absolute;
+    animation-fill-mode: forwards;
+}
+@keyframes example{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    100%{
+        top: 50px;
+        left: 10px;
+    }
+}
+.para2{
+    animation-name: example1;
+    animation-duration: 2s;
+    position: absolute;
+    animation-fill-mode: forwards;
+}
+@keyframes example1{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    100%{
+        top: 300px;
+        left: 100px;
+    }
+}
+.para3{
+    animation-name: example3;
+    animation-duration: 2s;
+    position: absolute;
+    animation-fill-mode: forwards;
+}
+@keyframes example3{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    100%{
+        top: 500px;
+        left: 10px;
+    }
+}
+.main{
+    height:700px;
+}

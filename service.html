@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:rgba(255, 255, 255, 0.192);
+            background-image: url(servicebc.webp);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .logo h2{
+    color: aliceblue;
+    text-shadow: 5px 5px 5px black;
+    border: solid wheat;
+    padding:0px 3px 0px 3px;
+}
+       
+        /* nav-bar */
+
+.nav{
+    display: flex;
+    background-color:rgba(0, 0, 0, 0.332);
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;margin-bottom: 10px;
+    margin-bottom: 250px;
+}
+.lin{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+.lin:hover{
+    background-color: rgba(0, 0, 0, 0.605);
+    border-radius: 10px;
+}
+.logo{
+    margin-left: 10px;
+}
+
+/* footer */
+
+.col1{
+    line-height: 30px;
+}
+.col2 img{
+    width: 200px;
+    height: 200px;
+}
+.footer{
+    margin-top: 20%;
+    display: flex;
+    background-color: rgba(235, 232, 232, 0.5);
+    align-content: center;
+    gap: 20px;
+    justify-content:space-around;
+    padding: 20px;
+    border-radius: 10px;
+} 
+li a{
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+li{
+    list-style: none;
+}
+h4{
+    color: black;
+    text-align: center;
+    font-size:larger;
+}
+.box{
+    width: 50px;
+    height: 30px;
+}
+a i{
+    width: 25px;
+    height: 30px;
+    color: black;
+}
+a:hover{
+background-color: antiquewhite;
+width: 40px;
+}
+/* footer end */
+        .service{
+            display: grid;
+            grid-template-rows: repeat(3,200px);
+            grid-template-columns: repeat(3,400px);
+            grid-template-areas: 'para1 img para2'
+            'para3 img para4'
+            'para5 img para6';
+             align-items:center;
+             align-content:center;
+             justify-content:center;
+             /* border: solid black;
+             border-radius: 10px; */
+             padding-bottom: 20px;
+             background-color: rgba(250, 244, 244, 0.181);
+
+        }
+        .para1{grid-area: para1;}
+        .para2{grid-area: para2;}
+        .para3{grid-area: para3;}
+        .para4{grid-area: para4;}
+        .para5{grid-area: para5;}
+        .para6{grid-area: para6;}
+        .img{grid-area: img;}
+        .img img{
+            padding-left: 70px;
+        }
+        .para{
+            border: solid rgba(0, 0, 0, 0.545);
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+        .fot img{
+            width: 100px;
+            height: 100px;
+        }
+        .fot{
+            display: flex;
+            justify-content:center;
+            gap: 100px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: rgba(250, 235, 215, 0.564);
+
+        }
+        .fot1{
+            width: 400px;
+            height: 400px;
+            align-content: center;
+            text-align: center;
+            background-color: antiquewhite;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .ser h1{
+            width: 200px; 
+            text-align: center;
+            text-shadow:2px 2px rgba(0, 0, 0, 0.312);
+        }
+        .ser{
+            width: 300px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.562);
+        }
+        /* animation */
+        .animation img{
+            animation-name: example;
+            animation-duration: 3s;
+            position: absolute;
+            animation-iteration-count: infinite;
+        }
+        .img{
+            width: 300px;
+        }
+        @keyframes example{
+            0%{
+                top:130%;
+                left: 0;
+            }
+            100%{
+                top:130%;
+                left: calc(100% - 350px);
+            }
+        }
+        .serpic{
+            animation-name: serpic;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            position: absolute;
+            animation-iteration-count: 1;
+        }
+        @keyframes serpic{
+            0%{
+                top: 10px;
+                left: 620px;
+            }
+            100%{
+                top: 100px;
+                left: 620px;
+                transform: rotate(720deg);
+            }
+        }
+        .serpic img{
+            width: 250px;
+            height: 200px;
+        }
+        /* animation end */
+    </style>
+</head>
+<body>
+    
+     <!-- nav -->
+     <div class="nav">
+        <div class="logo"><h2>K M C H</h2></div>
+        <div class="menu">
+            <a href="index3.html" class="lin">Home</a>
+            <a href="index1.html" class="lin">Appointment</a>
+            <a href="service.html" class="lin">Services</a>
+            <a href="about.html" class="lin">About</a>
+        </div>
+    </div>
+    <!-- nav end -->
+     <div class="serpic">
+        <img src="servipic.png" alt="">
+     </div>
+    <h1 class="ser">Service's Of KMCH</h1><br>
+    <div class="service">
+        <div class="para1 para"><h3>Cardiologist</h3><p>Our hospital offers expert cardiology services, including diagnostics, treatment, and ongoing care</p></div>
+        <div class="para2 para"><h3>Hematologist</h3><p>A hematologist in a hospital diagnoses and treats blood disorders, performs blood transfusions, and collaborates with other specialists for comprehensive patient care.</p></div>
+        <div class="para3 para"><h3>Pediartrician</h3><p>Hospital pediatrician services provide comprehensive medical care for infants, children, and adolescents. These services include routine check-ups, vaccinations, and treatment for illnesses and injuries. Pediatricians also offer specialized care for chronic conditions and developmental concerns.</p></div>
+        <div class="para4 para"><h3>Dental</h3><p>Hospitals provide dental services such as routine check-ups, emergency care, and specialized treatments.</p></div>
+        <div class="para5 para"><h3>Optometrist</h3><p>An optometrist hospital service provides comprehensive eye care, including vision exams, prescription lenses, and treatment for eye conditions. They also offer preventive care and collaborate with other healthcare professionals for specialized treatments.</p></div>
+        <div class="para6 para"><h3>Neurologist</h3><p>A neurologist hospital service specializes in diagnosing and treating disorders of the nervous system, including the brain, spinal cord, and peripheral nerves. They manage conditions such as epilepsy, stroke, multiple sclerosis, and Parkinson's disease.</p></div>
+        <div class="img"><img src="logo.png" alt=""></div>
+    </div>
+    <div class="animation">
+        <div class="img"><img src="amb2.png" alt=""></div>
+    </div>
+    <div>
+        <div class="fot">
+            <div class="fot1"><h2>24/7 Service</h2>
+                <img src="24hours.png" alt="">
+            <p>Our hospital offers comprehensive 24/7 services, ensuring that quality healthcare is always accessible. With around-the-clock emergency care, specialized medical staff, and state-of-the-art facilities, we are dedicated to providing immediate and effective treatment. Whether it's urgent care, diagnostics, or specialized procedures, our team is here to support you anytime, day or night. Trust us to be your reliable healthcare partner, committed to your well-being 24 hours a day, 7 days a week.</p></div>
+            <div class="fot1"><h2>Ambulance Service</h2>
+                <img src="ambulance.jpeg" alt="">
+            <p>Our 24/7 ambulance service ensures immediate response to medical emergencies at any hour. Equipped with state-of-the-art medical equipment and staffed by highly trained professionals, we provide rapid and reliable transport to the nearest healthcare facility. Your safety and health are our top priorities. Count on us for swift and compassionate care, day or night.</p></div>
+        </div>
+    </div>
+     <!-- footer -->
+     
+     <footer class="footer">
+        <div class="col col2 ">
+            <img src="logo3.png" alt="">
+           
+        </div>
+        <div class="col col1">
+            <h4>Address:</h4>
+            <ul><p>Kovai Medical Center and Hospital, <br> Coimbatore.99, <br> Avanashi Road, <br> Coimbatore-641014.</p></ul>
+           
+        </div>
+        <div class="col ">
+            <h4>Company:</h4>
+            <ul>
+                <li class="box"><a href="index1.html">Appointment</a></li>
+                <li class="box"><a href="cancel.html">Cancel_Appointment</a></li>
+                <li class="box"><a href="service.html">Service</a></li>
+                <li class="box"><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h4>Get help:</h4>
+            <ul>
+                <li class="box"><a href="">FAQ</a> </li>
+                <li class="box"><a href="">Contact</a></li>
+                <li class="box"><a href=""></a></li>
+                <li class="box"><a href=""></a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h4>Follow us:</h4>
+            <div class="socialicon">
+                <a href="" class="box"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="box"><i class="fab fa-twitter"></i></a>
+                <a href="" class="box"><i class="fab fa-instagram"></i></a>
+                <a href="" class="box"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        
+     </footer>
+     <!-- footer end -->
+    </div>
+</body>
+</html>
